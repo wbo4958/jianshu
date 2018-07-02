@@ -37,11 +37,6 @@
     - [Android-分析OOM工具介绍](./docs/android-oom-anr/Android-分析OOM工具介绍/Android-分析OOM工具介绍.md)
     - [记一个OOM-Case的分析](./docs/android-oom-anr/记一个OOM-Case的分析/记一个OOM-Case的分析.md)
 
-1. Android Open Source 项目
-    - [EventBus](./docs/android-opensource/EventBus/EventBus.md)
-    - [Picasso简析](./docs/android-opensource/Picasso简析/Picasso简析.md)
-    - [Volley](./docs/android-opensource/Volley/Volley.md)
-
 1. Android 其它
     - [Android-app是如何杀掉的](./docs/android/Android-app是如何杀掉的/Android-app是如何杀掉的.md)
     - [Android-Display的初始化](./docs/android/Android-Display的初始化/Android-Display的初始化.md)
@@ -52,6 +47,11 @@
     - [Android-Selinux](./docs/android/Android-Selinux/Android-Selinux.md)
     - [Google-CTS-case对android-non-public属性乱用的问题](./docs/android/Google-CTS-case对android-non-public属性乱用的问题/Google-CTS-case对android-non-public属性乱用的问题.md)
     - [将system_server进程配置成Android-Application进程](./docs/android/将system_server进程配置成Android-Application进程/将system_server进程配置成Android-Application进程.md)
+
+1. Android Open Source 项目
+    - [EventBus](./docs/android-opensource/EventBus/EventBus.md)
+    - [Picasso简析](./docs/android-opensource/Picasso简析/Picasso简析.md)
+    - [Volley](./docs/android-opensource/Volley/Volley.md)
 
 1. Java
     - [java-Concurrent---BlockingQueue](./docs/java/java-Concurrent---BlockingQueue/java-Concurrent---BlockingQueue.md)
