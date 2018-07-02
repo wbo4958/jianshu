@@ -10,14 +10,14 @@ InputDispatcher单独run在InputDispatcher线程中
 InputDispatcher的实现模型是Looper的机制，其底层根本还是属于epoll机制. 只不过Input并没有使用Looper相关的Message相关的功能，也就是说没有MessageQueue了，仅是单纯的使用Looper的addFd功能，以及它的epoll阻塞唤醒功能。
 
 InputDispatcher单独运行在一个线程当中，当线程启动时，它会不停的调用threadLoop, 
-```
+``` java
 bool InputDispatcherThread::threadLoop() {
     mDispatcher->dispatchOnce();
     return true;
 }
 ```
 每一次threadLoop都会调用InputDispatcher的dispatchOnce函数
-```
+``` java
 void InputDispatcher::dispatchOnce() {
     nsecs_t nextWakeupTime = LONG_LONG_MAX;
     { // acquire lock
