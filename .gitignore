@@ -1,6 +1,5 @@
 out/
 .idea/workspace.xml
 
-docs/Draft/*
-docs/Java-Draft/*
-docs/Others/*
+docs/draft/*
+docs/others/*

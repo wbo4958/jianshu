@@ -234,7 +234,7 @@ void InputReader::refreshConfigurationLocked(uint32_t changes) {
 }
 ```
 refreshConfigurationLocked的主要是通过getReaderConfiguration调用到Java层的配置信息，保存到mConfig里。具体调用到如下的接口
-```
+``` java
 getVirtualKeyQuietTimeMillis
 getExcludedDeviceNames
 getHoverTapTimeout

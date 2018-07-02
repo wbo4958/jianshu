@@ -1,11 +1,21 @@
-### DownloadJianshu
-DownloadJianshu recursively parses Markdown files and downloads uploaded images.
+# DownloadJianshu
+[DownloadJianshu](https://github.com/wbo4958/jianshu/blob/master/src/DownLoadJianshu.java) recursively parses Markdown files and then downloads the uploaded images to local storage.
 
-### Usage
+# Usage
 1. download Jianshu all posts
+    - Account Setting -> Download All Posts
+1. pass your untar jian dir to DownloadJianshu and run
+1. the backup dir will be in currently directory.
 
-    Account Setting -> Download All Posts
-2. open a terminal
-3. java -jar DownloadJianshu.jar JIAN_SHU_DIRECTORY
 
-After step 3, You can find backup Jianshu dir in `C:\001jianshu_backup`
+# Docs
+
+## Android Input
+
+1. Android Input
+    - [Android Input](./docs/android-input/Android-Input/Android-Input.md)
+    - [Android Input 2](./docs/android-input/Android-Input-2/Android-Input-2.md)
+
+1. Android Binder
+    - [Android Input](./docs/android-input/Android-Input/Android-Input.md)
+    - [Android Input](./docs/android-input/Android-Input/Android-Input.md)
