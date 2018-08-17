@@ -33,17 +33,23 @@
     - [SurfaceFlinger之Refresh](./docs/android-hwui/SurfaceFlinger之Refresh/SurfaceFlinger之Refresh.md)
     - [WMS中的Z-order](./docs/android-hwui/WMS中的Z-order/WMS中的Z-order.md)
 
+1. Android Low memory killer
+    - [Android-Low-memory-killer](./docs/android-low-memory/Android-Low-memory-killer/Android-Low-memory-killer.md)
+    - [Android-memory-trim](./docs/android-low-memory/Android-memory-trim/Android-memory-trim.md)
+    - [App对于lmk低杀时的应对](./docs/android-low-memory/App对于lmk低杀时的应对/App对于lmk低杀时的应对.md)
+    - [Android-app是如何杀掉的](./docs/android/Android-app是如何杀掉的/Android-app是如何杀掉的.md)
+
 1. Android OOM ANR
     - [Android-分析OOM工具介绍](./docs/android-oom-anr/Android-分析OOM工具介绍/Android-分析OOM工具介绍.md)
     - [记一个OOM-Case的分析](./docs/android-oom-anr/记一个OOM-Case的分析/记一个OOM-Case的分析.md)
 
 1. Android 其它
-    - [Android-app是如何杀掉的](./docs/android/Android-app是如何杀掉的/Android-app是如何杀掉的.md)
+    - [Android-Broadcast](./docs/android/Android-Broadcast/Android-Broadcast.md)
     - [Android-Display的初始化](./docs/android/Android-Display的初始化/Android-Display的初始化.md)
     - [Android-Permissions](./docs/android/Android-Permissions/Android-Permissions.md)
     - [Android-Stack与Task ](./docs/android/Android-Stack与Task/Android-Stack与Task.md)
     - [Android-bootanimation播放mp4的可行性分析](./docs/android/Android-bootanimation播放mp4的可行性分析/Android-bootanimation播放mp4的可行性分析.md)
-    - [Android-Handler-Looper](./docs/android/Android-Handler-Looper/Android-Handler-Looper.md)
+    - [Android-Handler-Looper-Messenger](./docs/android/Android-Handler-Looper-Messenger/Android-Handler-Looper-Messenger.md)
     - [Android-Selinux](./docs/android/Android-Selinux/Android-Selinux.md)
     - [Google-CTS-case对android-non-public属性乱用的问题](./docs/android/Google-CTS-case对android-non-public属性乱用的问题/Google-CTS-case对android-non-public属性乱用的问题.md)
     - [将system_server进程配置成Android-Application进程](./docs/android/将system_server进程配置成Android-Application进程/将system_server进程配置成Android-Application进程.md)

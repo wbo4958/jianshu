@@ -201,7 +201,19 @@ int Looper::addFd(int fd, int ident, int events, const sp<LooperCallback>& callb
 - 6. 针对fd1,  调用 LooperCallback里的handleEvent事件
 - 7. 针对fd2, 调用到Java层的handleEvent()
 
-五、 小结
+# 五、Messenger
+Messenger是AIDL和Handler的结合体，所以如果事先不了解AIDL的话，直接去学习Messenger就会觉得比较卡。
+
+![Messenger](https://upload-images.jianshu.io/upload_images/5688445-5615155d09f0fa4e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+Messenger是AIDL的封装，底层是通过AIDL进行跨进程通信，只不过可以不用像AIDL那样定义AIDL这么麻烦，Messenger直接使用IMessenger.aidl，不通的消息可以通过Message.what来区分，这样会比较简单。注意: Messenger服务端的的处理是放在一个线程里的，而不是在binder线程中操作的，原理很简单，就是在binder线程中，将Message发送给Handler所在的线程。
+**注意**， 这里的Handler线程并不一定是在UI线程中(大多数情况是在UI线程中), 可以是自己定义的非UI线程里的Handler, (如HandlerThread.getLooper())
+
+Messenager和AIDL相比较,
+- Messenager很简单，不用自定义AIDL, 它可以通过Message.what来区分不同的消息。
+- Messenager将所有的消息都route到一个线程中操作，这里不用考虑同步的需求。而AIDL收到的消息都是在binder线程中，如果想在binder线程中操作，势必会考虑同步的问题
+
+# 六、 小结
 一般App开发主要只用到Handler/Looper的Message处理，但是其实Handler/Looper的功能远大于此, 支持jni层的Message， 支持fd 监听
 它们的处理顺序如下
 Jni Messages -> fd event -> Java Message
