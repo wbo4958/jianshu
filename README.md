@@ -43,8 +43,12 @@
     - [Android-分析OOM工具介绍](./docs/android-oom-anr/Android-分析OOM工具介绍/Android-分析OOM工具介绍.md)
     - [记一个OOM-Case的分析](./docs/android-oom-anr/记一个OOM-Case的分析/记一个OOM-Case的分析.md)
 
-1. Android 其它
+1. Android 组件
     - [Android-Broadcast](./docs/android/Android-Broadcast/Android-Broadcast.md)
+    - [Android-Service](./docs/android/Android-Service/Android-Service.md)
+    - [Android-ContentProvider](./docs/android/Android-ContentProvider/Android-ContentProvider.md)
+
+1. Android 其它
     - [Android-Display的初始化](./docs/android/Android-Display的初始化/Android-Display的初始化.md)
     - [Android-Permissions](./docs/android/Android-Permissions/Android-Permissions.md)
     - [Android-Stack与Task ](./docs/android/Android-Stack与Task/Android-Stack与Task.md)
