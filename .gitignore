@@ -1,5 +1,6 @@
 out/
 .idea/workspace.xml
+.idea/vcs.xml
 
 docs/draft/*
 docs/others/*

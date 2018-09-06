@@ -59,6 +59,19 @@ void updatePreviousProcessLocked(ActivityRecord r) {
 另外，一个进程里的 services 或 provider是有可能会提升该进程的oom adj
 比如一个oomadj更小的进程(也就是更重要的进程)正绑定了oomadj更大的进程，且在绑定的时候允许对host service的adj进行promotion, 此时，hosting service的进程就有可能会被promote到与client进程相同的oomadj, 也就是说，如果host service进程的oomadj太大了，那它可能会被kill掉，而此时更重要的client进程还绑定在该service上，所以这时就有可能出现混乱。对于provider同理。
 
+引用AOSP对于foreground App的定义, https://developer.android.com/about/versions/oreo/background#services
+```
+An app is considered to be in the foreground if any of the following is true:
+*   It has a visible activity, whether the activity is started or paused.
+*   It has a foreground service.
+*   Another foreground app is connected to the app, either by binding to one of its services or by making 
+    use of one of its content providers. For example, the app is in the foreground if another app binds to its:
+    *   [IME](https://developer.android.com/guide/topics/text/creating-input-method.html)
+    *   Wallpaper service
+    *   Notification listener
+    *   Voice or text service
+```
+
 # 二 native与kernel oomadj
 
 ![applyOOMadj](https://upload-images.jianshu.io/upload_images/5688445-a64bd7ad41bff99d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
